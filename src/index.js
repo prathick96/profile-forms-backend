@@ -10,10 +10,6 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("<h3>Profile Forms API!</h3><br/>");
-});
-
 app.use("/", formRouter);
 
 app.listen(process.env.PORT || 8080, () => {
